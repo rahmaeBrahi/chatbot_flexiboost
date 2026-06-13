@@ -376,7 +376,7 @@ async function handleButtonClick(text) {
 
 async function sendMessage(message) {
     try {
-        const response = await fetch('/chatbot/chat', {
+        const response = await fetch('/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
